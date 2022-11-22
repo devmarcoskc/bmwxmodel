@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virutal Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header/header.css"/>
+    <link rel="stylesheet" href="section/section.css"/>
+    <link rel="stylesheet" href="section/section2.css"/>
+
+</head>
+<body>
+    <header>
+        <div class="header--container">
+            <div class="home--area">
+                <a href="index.html"><img src="images/bmwlogo.png"/></a>
+            </div>
+            <div class="nav--bars">
+                <ion-icon name="menu"></ion-icon>
+                <nav>
+                    <li><a href="login.html">ACCOUNT</a></li>
+                    <li><a href="index.html">SHOP</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                </nav>
+            </div>
+
+            <div class="mobile--aside">
+                <div class="mobile--aside--container">
+                    <ion-icon name="close"></ion-icon>
+                    <nav>
+                        <li><a href="login.html" class="mobile--nav">ACCOUNT</a></li>
+                        <li><a href="index.html" class="mobile--nav">SHOP</a></li>
+                        <li><a href="contact.html" class="mobile--nav">CONTACT</a></li>
+                        <li><a href="services.html" class="mobile--nav">SERVICES</a></li>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <section>
+
+        <main>
+
+            <div class="main--container" >
+                <div class="context--container">
+                    <div class="desc--container">
+                        <h1></h1>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="info--container">
+                <div class="info--left">
+                    <h1>--</h1>
+                    <span></span>
+                     <h4>Período de fabricação:</h4>
+                     <span id="s-2">--</span>
+                    <h4>Motores:</h4>
+                    <span id="s-3">--</span>
+                    <h4>Comprimento/largura/altura:</h4> 
+                    <span id="s-4">--</span>
+                    <h4>Preço:</h4>
+                    <span id="s-5">--</span>
+                    <a href="">Adicionar a loja!</a>
+                    
+                </div>
+                <div class="info--right">
+                    <div class="fade">
+                        <span>x</span>
+                    </div>
+                    <div class="modal">
+                        <div class="images--grid">
+                            <img src="images/bmwg02I-1.jpg" id="i-1"/>
+                            <img src="images/bmwg02I-2.jpg" id="i-2"/>
+                            <img src="images/bmwg02I-3.jpg" id="i-3"/>
+                            <img src="images/bmwg02I-4.jpg" id="i-4"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    
+            <div class="buyinfo--container">
+
+                <div class="second--container">
+                    <div class="personal--info">
+                    <form class="main--form--validator" action="cadastro.php" method="post">
+                        <h1>Informações pessoais:</h1>
+
+                        <div class="states">
+                            <label for="uf" id="states">Selecione seu estado:</label>
+                                <select name="order" id="uf">
+                                    <option></option>
+                                </select>
+                                <label for="cidade">Digite sua cidade:</label>
+                                <select id="city">
+                                    <option></option>
+                                </select>     
+                        </div>
+                        
+                        <h4>Digite seu CEP:</h4>
+                        <input type="text" name="CEP" id="cep" data-rules="required|cep">
+                        <h4>Digite seu endereço:</h4>
+                        <input type="text" name="endereço" id="endereço" data-rules="required">
+
+                        <h4>Seu nome completo:</h4>
+                        <input type="text" name="name" data-rules="required|min=4">
+                        <h4>Digite seu CPF:</h4>
+                        <input type="text" name="cpf" id="cpf" data-rules="required|cpf">
+                        <h4>Digite seu RG:</h4>
+                        <input type="text" name="rg" id="rg" data-rules="required|rg">
+                        
+
+                        <h4>Selecione o cartão:</h4>
+                        <div class="payment">
+                            <img src="images/hipercard.png">
+                            <img src="images/visacart.jpg"/>
+                            <img src="images/mastercard.jpg"/>
+                            <img src="images/elocard.png"/>
+                        </div>
+
+                        <div class="payment--valors">
+                            <div class="credit--card">
+                                <span>Digite o número do seu cartão:</span>
+                                <input type="text" name="credit" placeholder="*************" data-rules="required|min=10"/>
+                                <span>Nome do titular:</span>
+                                <input type="text" name="titular" data-rules="required"/>
+                                <span>Data de vencimento:</span>
+                                <input type="text" name="vencimento" data-rules="required|min=4"/>
+                            </div>
+                            <div class="valors--card">
+                                <span>Código de segurança:</span>
+                                <input type="text" name="segurança" data-rules="required"/>
+                                <label id="credit--valors">
+                                    <br/>Selecione a opção de pagamento:</br>
+                                    <select>
+                                        <option id="o-1">    
+                                        </option>
+                                        <option id="o-2">    
+                                        </option>
+                                        <option id="o-3">      
+                                        </option>
+                                        <option id="o-4">
+                                        </option>
+                                    </select>
+                                </label>
+                                </br>
+                                <input type="submit" id="finalizar" value="Finalizar compra!">
+                            </div>
+                        </div>
+
+                    </div>
+                    </form>
+
+                    <div class="car--container">
+                        <div class="car--infos">
+                            <img src="">
+                           <div class="last--container">
+                                <div class="firsts--valor">
+                                    <h2>Nome:</h2>
+                                    <span id="name-1">--</span>
+                                    <h2>Motor:</h2>
+                                    <span id="name-2">--</span>
+                                </div>
+                                <div class="total--valor">
+                                    <h1>Comprimento:</h1>
+                                    <span>--</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="last--footer">
+                <div class="footer--container">
+                    <a href="">Política de cookies</a>
+                    <a href="">Política de privacidade</a>
+                    <a href="">Política de ajuda</a>
+                    <span>© BMW GROUP Brasil 2022</span>
+                    
+                </div>
+            </div>
+
+        </main>
+    </section>
+    <aside>
+        algo
+    </aside>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="JSON.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+* {
+    margin: 0px;
+}
+header, footer {
+    height: 10vh;
+    width: 100vw;
+    background-color: whitesmoke;
+}
+footer {
+    background-color: rgb(168, 165, 165);
+}
+section {
+    display: flex;
+    flex-direction: row;
+}
+main {
+    height: 80vh;
+    flex: 1;
+}
+aside {
+    display: none;
+    height: 80vh;
+    background-color: rgb(232, 232, 232);
+    width: 20vw;
+}
+.footer--container {
+    display: flex;
+    height: 100%;
+    max-width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer--container a{
+    text-decoration: none;
+}
+.header--container {
+    display: flex;
+    max-width: 80%;
+    height: 100%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.header--container a{
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(39, 38, 38);
+    font-weight: bold;
+}
+.header--container a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+.nav--bars li {
+    display: inline-block;
+    padding-right: 10px;
+}
+.home--area img{
+    height: 50px;
+    width: 50px;
+}
+.service--container {
+    display: flex;
+    height: 100%;
+    max-width: 80%;
+    margin: auto;
+}
+.services--locals {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+.services--locals h1 {
+    margin-top: 20px;
+    font-size: 28px;
+}
+.services--locals h3 {
+    margin-top: 10px;
+}
+.services--locals h2 {
+    margin-top: 20px;
+}
+.bmw--logo {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+.bmw--logo img{
+    height: 70%;
+    width: 70%;
+    cursor: pointer;
+}
+.mobile--aside {
+    display: none;
+}
+.nav--bars ion-icon {
+    display: none;
+}
+
+@media (max-width:897px) {
+
+    .bmw--logo {
+        display: none;
+    }
+    .services--locals {
+        margin-top: 60px;
+        width: 80%;
+    }
+    .footer--container a{
+        text-decoration: none;
+        font-size: 12px;
+    }
+    .nav--bars li {
+        display: none;
+        font-size: 13px;
+        padding-right: 5px;
+    }
+
+    .nav--bars ion-icon {
+        display: flex;
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+    }
+
+    .mobile--aside {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        top: 0px;
+        right: -40vw;
+        height: 100vh;
+        width: 40vw;
+        background-color: #333;
+        opacity: 0.9;
+        color: white;
+        transition: all ease 0.2s;
+    }
+    .mobile--aside ion-icon {
+        height: 50px;
+        width: 50px;
+        cursor: pointer;
+    }
+    .mobile--aside a {
+        color: rgb(185, 180, 180);
+        font-size: 20px;
+    }
+    .mobile--aside li {
+        margin-top: 15px;
+    }
+    .mobile--aside--container {
+        display: flex;
+        margin-top: 150px;
+        flex-direction: column;
+        align-items: center;
+    }
+}

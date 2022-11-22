@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css"/>
+</head>
+<body>
+    <header>
+        <div class="header--container">
+            <div class="home--area">
+                <a href="index.html"><img src="images/bmwlogo.png"/></a>
+            </div>
+            <div class="nav--bars">
+                <ion-icon name="menu"></ion-icon>
+                <nav>
+                    <li><a href="login.html">ACCOUNT</a></li>
+                    <li><a href="index.html">SHOP</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                </nav>
+            </div>
+
+            <div class="mobile--aside">
+                <div class="mobile--aside--container">
+                    <ion-icon name="close"></ion-icon>
+                    <nav>
+                        <li><a href="login.html" class="mobile--nav">ACCOUNT</a></li>
+                        <li><a href="index.html" class="mobile--nav">SHOP</a></li>
+                        <li><a href="contact.html" class="mobile--nav">CONTACT</a></li>
+                        <li><a href="services.html" class="mobile--nav">SERVICES</a></li>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <section>
+        <main>
+            <div class="contact--container">
+                <div class="welcome--area">
+                    <span>Crie sua conta</span>
+                    <span>ou</span>
+                    <span>Faça seu Login!</span>
+                    <h4>E fique por dentro <p>de</p> todas as ofertas!</h4>
+                </div>
+                <div class="login--container">
+                    <span>Faça seu Login</br>E fique por dentro das ofertas:</span>
+                    <form class="form--login" action="login.php" method="post">
+                        <label>
+                            Digite seu nome:</br>
+                            <input type="text" name="name" placeholder="Nome completo" data-rules="required|min=3"/>
+                            
+                        </label>
+                        <label>
+                            Digite seu e-mail:</br>
+                            <input type="email" name="email" placeholder="exemplo@..." data-rules="required|email"/>
+                        </label>
+                        <label>
+                            Digite sua senha:</br>
+                            <input type="password" name="password" placeholder="***********" data-rules="required|min=5"/>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="checkbox" class="check" data-rules="required">Eu li e concordo com os <a href="">termos de uso</a>
+                        </label>
+                        <label>
+                            <input type="submit" value="Login" id="submit"/>
+                        </label>
+                        <label>
+                            <input type="submit" value="Cadastrar" id="submitCA"/>
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </section>
+    <footer>
+        <div class="footer--container">
+            <a href="">Política de cookies</a>
+            <a href="">Política de privacidade</a>
+            <a href="">Política de ajuda</a>
+            <span>© BMW GROUP Brasil 2022</span>
+            
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="Scripts/loginScript.js"></script>
+</body>
+</html>

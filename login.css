@@ -1,0 +1,200 @@
+* {
+    margin: 0px;
+}
+header, footer {
+    height: 10vh;
+    width: 100vw;
+    background-color: whitesmoke;
+}
+footer {
+    background-color: rgb(168, 165, 165);
+}
+section {
+    display: flex;
+    flex-direction: row;
+}
+main {
+    height: 80vh;
+    flex: 1;
+}
+aside {
+    display: none;
+    height: 80vh;
+    background-color: rgb(232, 232, 232);
+    width: 20vw;
+}
+.header--container {
+    display: flex;
+    max-width: 80%;
+    height: 100%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.header--container a{
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(39, 38, 38);
+    font-weight: bold;
+}
+.header--container a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+.nav--bars li {
+    display: inline-block;
+    padding-right: 10px;
+}
+.home--area img{
+    height: 50px;
+    width: 50px;
+}
+.footer--container {
+    display: flex;
+    height: 100%;
+    max-width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer--container a{
+    text-decoration: none;
+}
+
+.contact--container {
+    display: flex;
+    height: 100%;
+    width: 90%;
+    margin: auto;
+}
+.welcome--area {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+}
+.welcome--area h4{
+    margin-top: 20px;
+    font-size: 28px;
+    color: rgb(92, 89, 89);
+}
+.login--container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: #999;
+    font-weight: bold;
+}
+.login--container span {
+    display: none;
+}
+.form--login {
+    display: flex;
+    flex-direction: column;
+}
+.login--container input {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    height: 25px;
+    width: 300px;
+}
+.login--container .check {
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+    font-size: 7px;
+}
+.error--text {
+    margin-top: -30px;
+    margin-bottom: 20px;
+    color: red;
+    font-size: 13px;
+}
+.error {
+    margin-top: -27px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: red;
+}
+.mobile--aside {
+    display: none;
+}
+.nav--bars ion-icon {
+    display: none;
+}
+
+@media (max-width: 897px) {
+
+    .login--container span {
+        display: flex;
+        font-size: 25px;
+        margin-bottom: 100px;
+        margin-top: -50px;
+    }
+    .contact--container {
+        display: flex;
+        flex-direction: column;
+    }
+    .welcome--area {
+        display: none;
+    }
+    .footer--container a{
+        text-decoration: none;
+        font-size: 12px;
+    }
+    .nav--bars {
+        display: inline-block;
+    }
+    .nav--bars li {
+        display: none;
+        font-size: 13px;
+        padding-right: 5px;
+    }
+
+    .nav--bars ion-icon {
+        display: flex;
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+    }
+
+    .mobile--aside {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        top: 0px;
+        right: -40vw;
+        height: 100vh;
+        width: 40vw;
+        background-color: #333;
+        opacity: 0.9;
+        color: white;
+        transition: all ease 0.2s;
+    }
+    .mobile--aside ion-icon {
+        height: 50px;
+        width: 50px;
+        cursor: pointer;
+    }
+    .mobile--aside a {
+        color: rgb(185, 180, 180);
+        font-size: 20px;
+    }
+    .mobile--aside li {
+        margin-top: 15px;
+    }
+    .mobile--aside--container {
+        display: flex;
+        margin-top: 150px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
